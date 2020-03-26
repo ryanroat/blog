@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/ryanroat/blog/issues"
   },
-  "homepage": "https://github.com/ryanroat/blog#readme"
+  "homepage": "https://github.com/ryanroat/blog#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
+  }
 }
