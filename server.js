@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
         }
     ];
 
-    res.render('index', { articles });
+    res.render('articles/index', { articles });
 });
 
 app.listen(5000);
