@@ -7,12 +7,12 @@ router.get('/new', (req, res) => {
     res.render('articles/new', {article: new Article() });
 });
 
-router.get('/id', (req, res) => {
-
+router.get('/:id', (req, res) => {
+    res.send(req.params.id);
 })
 
 router.post('/', async (req, res) => {
-    const article = new Article ({
+    let article = new Article ({
         title: req.body.title,
         description: req.body.description,
         markdown: req.body.markdown
