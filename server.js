@@ -13,6 +13,10 @@ mongoose.connect('mongodb://localhost/blog', {
 });
 
 app.set('view engine', 'ejs');
+
+// using app.use to serve up static CSS files in public/assets/ folder when /public link is called in ejs files
+// app.use("/route", express.static("foldername"));
+app.use('/public', express.static('public'));
 app.use(express.urlencoded({ extended: false}));
 app.use(methodOverride('_method'));
 
